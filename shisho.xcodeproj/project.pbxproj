@@ -15,6 +15,7 @@
 		30D118A724ED097F004E39C2 /* shishoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118A624ED097F004E39C2 /* shishoUITests.swift */; };
 		30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */; };
 		30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B824ED3784004E39C2 /* DocumentParsing.swift */; };
+		30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D118FA24ED7F82004E39C2 /* shisho.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		30D118A824ED097F004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileButtonView.swift; sourceTree = "<group>"; };
 		30D118B824ED3784004E39C2 /* DocumentParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentParsing.swift; sourceTree = "<group>"; };
+		30D118FB24ED7F82004E39C2 /* shisho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shisho.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				30D1188C24ED097E004E39C2 /* Assets.xcassets */,
 				30D1189124ED097E004E39C2 /* Info.plist */,
 				30D1189224ED097E004E39C2 /* shisho.entitlements */,
+				30D118FA24ED7F82004E39C2 /* shisho.xcdatamodeld */,
 				30D1188E24ED097E004E39C2 /* Preview Content */,
 			);
 			path = shisho;
@@ -287,6 +290,7 @@
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
 				30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */,
+				30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30D118FA24ED7F82004E39C2 /* shisho.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30D118FB24ED7F82004E39C2 /* shisho.xcdatamodel */,
+			);
+			currentVersion = 30D118FB24ED7F82004E39C2 /* shisho.xcdatamodel */;
+			path = shisho.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30D1187D24ED097C004E39C2 /* Project object */;
 }
