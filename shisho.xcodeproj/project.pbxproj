@@ -13,6 +13,7 @@
 		30D1189024ED097E004E39C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */; };
 		30D1189C24ED097F004E39C2 /* shishoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1189B24ED097F004E39C2 /* shishoTests.swift */; };
 		30D118A724ED097F004E39C2 /* shishoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118A624ED097F004E39C2 /* shishoUITests.swift */; };
+		30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		30D118A224ED097F004E39C2 /* shishoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shishoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D118A624ED097F004E39C2 /* shishoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoUITests.swift; sourceTree = "<group>"; };
 		30D118A824ED097F004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		30D1188724ED097C004E39C2 /* shisho */ = {
 			isa = PBXGroup;
 			children = (
+				30D118B424ED1955004E39C2 /* components */,
 				30D1188824ED097C004E39C2 /* shishoApp.swift */,
 				30D1188A24ED097C004E39C2 /* ContentView.swift */,
 				30D1188C24ED097E004E39C2 /* Assets.xcassets */,
@@ -130,6 +133,14 @@
 				30D118A824ED097F004E39C2 /* Info.plist */,
 			);
 			path = shishoUITests;
+			sourceTree = "<group>";
+		};
+		30D118B424ED1955004E39C2 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			files = (
 				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
+				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
