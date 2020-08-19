@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1188824ED097C004E39C2 /* shishoApp.swift */; };
+		30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1188A24ED097C004E39C2 /* ContentView.swift */; };
+		30D1188D24ED097E004E39C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188C24ED097E004E39C2 /* Assets.xcassets */; };
+		30D1189024ED097E004E39C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */; };
+		30D1189C24ED097F004E39C2 /* shishoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1189B24ED097F004E39C2 /* shishoTests.swift */; };
+		30D118A724ED097F004E39C2 /* shishoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118A624ED097F004E39C2 /* shishoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30D1189824ED097F004E39C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D1187D24ED097C004E39C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D1188424ED097C004E39C2;
+			remoteInfo = shisho;
+		};
+		30D118A324ED097F004E39C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D1187D24ED097C004E39C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D1188424ED097C004E39C2;
+			remoteInfo = shisho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30D1188524ED097C004E39C2 /* shisho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shisho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D1188824ED097C004E39C2 /* shishoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoApp.swift; sourceTree = "<group>"; };
+		30D1188A24ED097C004E39C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30D1188C24ED097E004E39C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30D1189124ED097E004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D1189224ED097E004E39C2 /* shisho.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shisho.entitlements; sourceTree = "<group>"; };
+		30D1189724ED097F004E39C2 /* shishoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shishoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D1189B24ED097F004E39C2 /* shishoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoTests.swift; sourceTree = "<group>"; };
+		30D1189D24ED097F004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D118A224ED097F004E39C2 /* shishoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shishoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D118A624ED097F004E39C2 /* shishoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoUITests.swift; sourceTree = "<group>"; };
+		30D118A824ED097F004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D1188224ED097C004E39C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D1189424ED097F004E39C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D1189F24ED097F004E39C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D1187C24ED097C004E39C2 = {
+			isa = PBXGroup;
+			children = (
+				30D1188724ED097C004E39C2 /* shisho */,
+				30D1189A24ED097F004E39C2 /* shishoTests */,
+				30D118A524ED097F004E39C2 /* shishoUITests */,
+				30D1188624ED097C004E39C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D1188624ED097C004E39C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D1188524ED097C004E39C2 /* shisho.app */,
+				30D1189724ED097F004E39C2 /* shishoTests.xctest */,
+				30D118A224ED097F004E39C2 /* shishoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D1188724ED097C004E39C2 /* shisho */ = {
+			isa = PBXGroup;
+			children = (
+				30D1188824ED097C004E39C2 /* shishoApp.swift */,
+				30D1188A24ED097C004E39C2 /* ContentView.swift */,
+				30D1188C24ED097E004E39C2 /* Assets.xcassets */,
+				30D1189124ED097E004E39C2 /* Info.plist */,
+				30D1189224ED097E004E39C2 /* shisho.entitlements */,
+				30D1188E24ED097E004E39C2 /* Preview Content */,
+			);
+			path = shisho;
+			sourceTree = "<group>";
+		};
+		30D1188E24ED097E004E39C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30D1189A24ED097F004E39C2 /* shishoTests */ = {
+			isa = PBXGroup;
+			children = (
+				30D1189B24ED097F004E39C2 /* shishoTests.swift */,
+				30D1189D24ED097F004E39C2 /* Info.plist */,
+			);
+			path = shishoTests;
+			sourceTree = "<group>";
+		};
+		30D118A524ED097F004E39C2 /* shishoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30D118A624ED097F004E39C2 /* shishoUITests.swift */,
+				30D118A824ED097F004E39C2 /* Info.plist */,
+			);
+			path = shishoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30D1188424ED097C004E39C2 /* shisho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D118AB24ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shisho" */;
+			buildPhases = (
+				30D1188124ED097C004E39C2 /* Sources */,
+				30D1188224ED097C004E39C2 /* Frameworks */,
+				30D1188324ED097C004E39C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shisho;
+			productName = shisho;
+			productReference = 30D1188524ED097C004E39C2 /* shisho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30D1189624ED097F004E39C2 /* shishoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D118AE24ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shishoTests" */;
+			buildPhases = (
+				30D1189324ED097F004E39C2 /* Sources */,
+				30D1189424ED097F004E39C2 /* Frameworks */,
+				30D1189524ED097F004E39C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D1189924ED097F004E39C2 /* PBXTargetDependency */,
+			);
+			name = shishoTests;
+			productName = shishoTests;
+			productReference = 30D1189724ED097F004E39C2 /* shishoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30D118A124ED097F004E39C2 /* shishoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D118B124ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shishoUITests" */;
+			buildPhases = (
+				30D1189E24ED097F004E39C2 /* Sources */,
+				30D1189F24ED097F004E39C2 /* Frameworks */,
+				30D118A024ED097F004E39C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D118A424ED097F004E39C2 /* PBXTargetDependency */,
+			);
+			name = shishoUITests;
+			productName = shishoUITests;
+			productReference = 30D118A224ED097F004E39C2 /* shishoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D1187D24ED097C004E39C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					30D1188424ED097C004E39C2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					30D1189624ED097F004E39C2 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 30D1188424ED097C004E39C2;
+					};
+					30D118A124ED097F004E39C2 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 30D1188424ED097C004E39C2;
+					};
+				};
+			};
+			buildConfigurationList = 30D1188024ED097C004E39C2 /* Build configuration list for PBXProject "shisho" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30D1187C24ED097C004E39C2;
+			productRefGroup = 30D1188624ED097C004E39C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D1188424ED097C004E39C2 /* shisho */,
+				30D1189624ED097F004E39C2 /* shishoTests */,
+				30D118A124ED097F004E39C2 /* shishoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30D1188324ED097C004E39C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D1189024ED097E004E39C2 /* Preview Assets.xcassets in Resources */,
+				30D1188D24ED097E004E39C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D1189524ED097F004E39C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D118A024ED097F004E39C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D1188124ED097C004E39C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
+				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D1189324ED097F004E39C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D1189C24ED097F004E39C2 /* shishoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D1189E24ED097F004E39C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D118A724ED097F004E39C2 /* shishoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D1189924ED097F004E39C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D1188424ED097C004E39C2 /* shisho */;
+			targetProxy = 30D1189824ED097F004E39C2 /* PBXContainerItemProxy */;
+		};
+		30D118A424ED097F004E39C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D1188424ED097C004E39C2 /* shisho */;
+			targetProxy = 30D118A324ED097F004E39C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30D118A924ED097F004E39C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30D118AA24ED097F004E39C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		30D118AC24ED097F004E39C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = shisho/shisho.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"shisho/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = shisho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shisho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		30D118AD24ED097F004E39C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = shisho/shisho.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"shisho/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = shisho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shisho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		30D118AF24ED097F004E39C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = shishoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shishoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shisho.app/Contents/MacOS/shisho";
+			};
+			name = Debug;
+		};
+		30D118B024ED097F004E39C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = shishoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shishoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shisho.app/Contents/MacOS/shisho";
+			};
+			name = Release;
+		};
+		30D118B224ED097F004E39C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = shishoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shishoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = shisho;
+			};
+			name = Debug;
+		};
+		30D118B324ED097F004E39C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = shishoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.neocities.fujinomiya.shishoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = shisho;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D1188024ED097C004E39C2 /* Build configuration list for PBXProject "shisho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D118A924ED097F004E39C2 /* Debug */,
+				30D118AA24ED097F004E39C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D118AB24ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shisho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D118AC24ED097F004E39C2 /* Debug */,
+				30D118AD24ED097F004E39C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D118AE24ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shishoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D118AF24ED097F004E39C2 /* Debug */,
+				30D118B024ED097F004E39C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D118B124ED097F004E39C2 /* Build configuration list for PBXNativeTarget "shishoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D118B224ED097F004E39C2 /* Debug */,
+				30D118B324ED097F004E39C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30D1187D24ED097C004E39C2 /* Project object */;
+}
