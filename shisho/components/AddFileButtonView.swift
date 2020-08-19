@@ -28,8 +28,11 @@ struct AddFileButtonView: View {
     {
         if(dialog.runModal() == NSApplication.ModalResponse.OK)
         {
-            let filepaths = dialog.urls
-            //TODO: add filepaths to database
+            for filepath in dialog.urls
+            {
+                getMetadataPDF(url: filepath)
+                //TODO: add returned objects to database
+            }
         }
     }
 }

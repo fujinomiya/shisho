@@ -14,6 +14,7 @@
 		30D1189C24ED097F004E39C2 /* shishoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1189B24ED097F004E39C2 /* shishoTests.swift */; };
 		30D118A724ED097F004E39C2 /* shishoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118A624ED097F004E39C2 /* shishoUITests.swift */; };
 		30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */; };
+		30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B824ED3784004E39C2 /* DocumentParsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		30D118A624ED097F004E39C2 /* shishoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoUITests.swift; sourceTree = "<group>"; };
 		30D118A824ED097F004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileButtonView.swift; sourceTree = "<group>"; };
+		30D118B824ED3784004E39C2 /* DocumentParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentParsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		30D1188724ED097C004E39C2 /* shisho */ = {
 			isa = PBXGroup;
 			children = (
+				30D118B724ED3654004E39C2 /* services */,
 				30D118B424ED1955004E39C2 /* components */,
 				30D1188824ED097C004E39C2 /* shishoApp.swift */,
 				30D1188A24ED097C004E39C2 /* ContentView.swift */,
@@ -141,6 +144,14 @@
 				30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		30D118B724ED3654004E39C2 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				30D118B824ED3784004E39C2 /* DocumentParsing.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
+				30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
