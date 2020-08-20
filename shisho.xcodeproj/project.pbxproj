@@ -17,6 +17,7 @@
 		30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B824ED3784004E39C2 /* DocumentParsing.swift */; };
 		30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D118FA24ED7F82004E39C2 /* shisho.xcdatamodeld */; };
 		30D1190224EDDF67004E39C2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190124EDDF67004E39C2 /* CoreData.swift */; };
+		30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190424EF1DD0004E39C2 /* Metadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		30D118B824ED3784004E39C2 /* DocumentParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentParsing.swift; sourceTree = "<group>"; };
 		30D118FB24ED7F82004E39C2 /* shisho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shisho.xcdatamodel; sourceTree = "<group>"; };
 		30D1190124EDDF67004E39C2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		30D1190424EF1DD0004E39C2 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		30D1188724ED097C004E39C2 /* shisho */ = {
 			isa = PBXGroup;
 			children = (
+				30D1190324EF1DB8004E39C2 /* models */,
 				30D118B724ED3654004E39C2 /* services */,
 				30D118B424ED1955004E39C2 /* components */,
 				30D1188824ED097C004E39C2 /* shishoApp.swift */,
@@ -158,6 +161,14 @@
 				30D1190124EDDF67004E39C2 /* CoreData.swift */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		30D1190324EF1DB8004E39C2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				30D1190424EF1DD0004E39C2 /* Metadata.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */,
 				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,

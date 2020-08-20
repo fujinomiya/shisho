@@ -8,22 +8,23 @@
 import Foundation
 import PDFKit
 
-func getMetadataPDF(url: URL)
+
+func getMetadataPDF(url: URL) -> Metadata?
 {
     guard let document = PDFDocument(url: url) else {
         //TODO: handle error
-        return
+        return nil
     }
     
     guard let metadata = document.documentAttributes else {
         //metadata not specified
-        return
+        return nil
     }
     
-    let title = metadata["Title"] ?? ""
-    let author = metadata["Author"] ?? ""
-    let date = metadata["CreationDate"] ?? ""
+    let container = Metadata(title:   metadata["Title"] as? String,
+                             author:  metadata["Author"] as? String,
+                             release: metadata["CreationDate"] as? Date,
+                             pages:   Int32(document.pageCount))
     
-    //TODO: wrap values in an object
+    return container
 }
-
