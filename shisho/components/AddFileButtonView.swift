@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AddFileButtonView: View {
-    let dialog = NSOpenPanel()
+    let coredata = CoreData()
+    let dialog   = NSOpenPanel()
     
     init()
     {
@@ -20,7 +21,7 @@ struct AddFileButtonView: View {
     var body: some View {
         Button(action: { openFileDialog() })
         {
-            Image(systemName: "plus")
+            Label("Add Item", systemImage: "plus")
         }
     }
     
@@ -30,8 +31,16 @@ struct AddFileButtonView: View {
         {
             for filepath in dialog.urls
             {
-                getMetadataPDF(url: filepath)
-                //TODO: add returned objects to database
+                if let metadata = getMetadataPDF(url: filepath)
+                {
+                    coredata.addDocument(file:     filepath,
+                                         title:    metadata.title ?? "",
+                                         author:   metadata.author ?? "",
+                                         release:  metadata.release,
+                                         pages:    metadata.pages,
+                                         bookmark: -1,
+                                         favorite: false)
+                }
             }
         }
     }

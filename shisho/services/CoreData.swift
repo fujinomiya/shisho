@@ -17,11 +17,12 @@ struct CoreData {
         do { try managedObjectContext.save() }
         catch
         {
+            print(error.localizedDescription)
             //TODO: handle failures
         }
     }
     
-    func addDocument(file: URL, title: String, author: String, release: Date, pages: Int32, bookmark: Int32, favorite: Bool)
+    func addDocument(file: URL, title: String, author: String, release: Date?, pages: Int32, bookmark: Int32, favorite: Bool)
     {
         let document = Document(context: managedObjectContext)
         
