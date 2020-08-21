@@ -17,8 +17,26 @@ struct DocumentListView: View {
     
     var body: some View {
         List {
-            ForEach(documentLibrary) { document in
-                DocumentDisplay(document: document)
+            Section(header: Text("Recent").font(.title)) {
+                ForEach(documentLibrary) { document in
+                    DocumentDisplay(document: document)
+                }
+            }
+            Section(header: Text("Library").font(.title)) {
+                Text("nothing here")
+            }
+        }
+    }
+    
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            offsets.map { documentLibrary[$0] }.forEach(viewContext.delete)
+
+            do { try viewContext.save() }
+            catch
+            {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
         }
     }
@@ -30,8 +48,9 @@ struct DocumentDisplay: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(document.title ?? "Unknown document")
-                .font(.title)
+                .font(.title2)
             Text(document.author ?? "unknown")
+                .font(.caption)
         }
     }
 }
