@@ -18,8 +18,20 @@ struct DocumentListView: View {
     var body: some View {
         List {
             ForEach(documentLibrary) { document in
-                Text("title: \(document.title ?? ""), author: \(document.author ?? ""), pages: \(document.pages)")
+                DocumentDisplay(document: document)
             }
+        }
+    }
+}
+
+struct DocumentDisplay: View {
+    let document: Document
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(document.title ?? "Unknown document")
+                .font(.title)
+            Text(document.author ?? "unknown")
         }
     }
 }
