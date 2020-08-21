@@ -10,37 +10,12 @@ import CoreData
 
 @main
 struct shishoApp: App {
+    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistentContainer.viewContext)
-        }
-    }
-    
-    let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "shisho")
-        
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError?
-            {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-    
-    func saveContext()
-    {
-        let context = persistentContainer.viewContext
-        
-        if context.hasChanges {
-            do { try context.save() }
-            catch
-            {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

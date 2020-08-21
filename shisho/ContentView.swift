@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("work in progress")
+            DocumentListView()
         }
         .toolbar(content: { AddFileButtonView() })
         .frame(width: 600, height: 600)

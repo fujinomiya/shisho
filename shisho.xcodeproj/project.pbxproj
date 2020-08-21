@@ -16,8 +16,9 @@
 		30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */; };
 		30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D118B824ED3784004E39C2 /* DocumentParsing.swift */; };
 		30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D118FA24ED7F82004E39C2 /* shisho.xcdatamodeld */; };
-		30D1190224EDDF67004E39C2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190124EDDF67004E39C2 /* CoreData.swift */; };
 		30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190424EF1DD0004E39C2 /* Metadata.swift */; };
+		30D1190724F05D4D004E39C2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190624F05D4D004E39C2 /* Persistence.swift */; };
+		30D1190924F067D1004E39C2 /* DocumentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190824F067D1004E39C2 /* DocumentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +55,9 @@
 		30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileButtonView.swift; sourceTree = "<group>"; };
 		30D118B824ED3784004E39C2 /* DocumentParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentParsing.swift; sourceTree = "<group>"; };
 		30D118FB24ED7F82004E39C2 /* shisho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shisho.xcdatamodel; sourceTree = "<group>"; };
-		30D1190124EDDF67004E39C2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		30D1190424EF1DD0004E39C2 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		30D1190624F05D4D004E39C2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		30D1190824F067D1004E39C2 /* DocumentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */,
+				30D1190824F067D1004E39C2 /* DocumentListView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -158,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				30D118B824ED3784004E39C2 /* DocumentParsing.swift */,
-				30D1190124EDDF67004E39C2 /* CoreData.swift */,
+				30D1190624F05D4D004E39C2 /* Persistence.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -303,10 +306,11 @@
 				30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */,
 				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
+				30D1190724F05D4D004E39C2 /* Persistence.swift in Sources */,
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
 				30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */,
-				30D1190224EDDF67004E39C2 /* CoreData.swift in Sources */,
 				30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */,
+				30D1190924F067D1004E39C2 /* DocumentListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

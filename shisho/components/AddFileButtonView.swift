@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct AddFileButtonView: View {
-    let coredata = CoreData()
-    let dialog   = NSOpenPanel()
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    let dialog = NSOpenPanel()
     
     init()
     {
@@ -33,15 +34,29 @@ struct AddFileButtonView: View {
             {
                 if let metadata = getMetadataPDF(url: filepath)
                 {
-                    coredata.addDocument(file:     filepath,
-                                         title:    metadata.title ?? "",
-                                         author:   metadata.author ?? "",
-                                         release:  metadata.release,
-                                         pages:    metadata.pages,
-                                         bookmark: -1,
-                                         favorite: false)
+                    let document = Document(context: viewContext)
+                    
+                    document.filepath     = filepath
+                    document.title        = metadata.title ?? ""
+                    document.author       = metadata.author ?? ""
+                    document.release_date = metadata.release
+                    document.pages        = metadata.pages
+                    document.bookmark     = -1
+                    document.favorite     = false
+                  
+                    save()
                 }
             }
+        }
+    }
+    
+    func save()
+    {
+        do { try viewContext.save() }
+        catch
+        {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
     }
 }
