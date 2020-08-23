@@ -61,13 +61,23 @@ struct DocumentDisplay: View, Identifiable {
             
             if previewRequest == self.id
             {
-                Text("show document info here")
-                    .background(Color.gray)
+                Button(action: {
+                    
+                }) {
+                    Text("Read")
+                }
             }
         }
         .onTapGesture
         {
-            previewRequest = self.id
+            if previewRequest == self.id
+            {
+                previewRequest = UUID()
+            }
+            else
+            {
+                previewRequest = self.id
+            }
         }
     }
 }
