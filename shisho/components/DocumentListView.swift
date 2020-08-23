@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DocumentListView: View {
+    @State private var previewedDocument: UUID = UUID()
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -19,18 +20,22 @@ struct DocumentListView: View {
         List {
             Section(header: Text("Recent").font(.title)) {
                 ForEach(documentLibrary) { document in
-                    DocumentDisplay(document: document)
+                    DocumentDisplay(document: document, previewRequest: self.$previewedDocument)
                 }
             }
             Section(header: Text("Library").font(.title)) {
-                Text("nothing here")
+                Button(action: { deleteAll() })
+                {
+                    Text("Delete all")
+                }
             }
         }
     }
     
-    private func deleteItems(offsets: IndexSet) {
+    func deleteAll()
+    {
         withAnimation {
-            offsets.map { documentLibrary[$0] }.forEach(viewContext.delete)
+            documentLibrary.forEach(viewContext.delete)
 
             do { try viewContext.save() }
             catch
@@ -42,8 +47,10 @@ struct DocumentListView: View {
     }
 }
 
-struct DocumentDisplay: View {
+struct DocumentDisplay: View, Identifiable {
+    let id = UUID()
     let document: Document
+    @Binding var previewRequest: UUID
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -51,6 +58,16 @@ struct DocumentDisplay: View {
                 .font(.title2)
             Text(document.author ?? "unknown")
                 .font(.caption)
+            
+            if previewRequest == self.id
+            {
+                Text("show document info here")
+                    .background(Color.gray)
+            }
+        }
+        .onTapGesture
+        {
+            previewRequest = self.id
         }
     }
 }

@@ -41,7 +41,7 @@ struct AddFileButtonView: View {
                     document.author       = metadata.author ?? ""
                     document.release_date = metadata.release
                     document.pages        = metadata.pages
-                    document.bookmark     = -1
+                    document.bookmark     = 0
                     document.favorite     = false
                   
                     save()
