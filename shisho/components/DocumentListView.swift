@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DocumentListView: View {
+    @Binding var viewingRequest: Bool
     @State private var previewedDocument: UUID = UUID()
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -20,7 +21,7 @@ struct DocumentListView: View {
         List {
             Section(header: Text("Recent").font(.title)) {
                 ForEach(documentLibrary) { document in
-                    DocumentDisplay(document: document, previewRequest: self.$previewedDocument)
+                    DocumentDisplay(document: document, previewRequest: self.$previewedDocument, viewingRequest: self.$viewingRequest)
                 }
             }
             Section(header: Text("Library").font(.title)) {
@@ -51,39 +52,36 @@ struct DocumentDisplay: View, Identifiable {
     let id = UUID()
     let document: Document
     @Binding var previewRequest: UUID
+    @Binding var viewingRequest: Bool
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(document.title ?? "Unknown document")
-                .font(.title2)
-            Text(document.author ?? "unknown")
-                .font(.caption)
-            
+        VStack {
+            VStack(alignment: .leading) {
+                Text(document.title ?? "Unknown document")
+                    .font(.title2)
+                Text(document.author ?? "unknown")
+                    .font(.caption)
+            }
+            .onTapGesture
+            {
+                if previewRequest == self.id
+                {
+                    previewRequest = UUID()
+                }
+                else
+                {
+                    previewRequest = self.id
+                }
+            }
+          
             if previewRequest == self.id
             {
                 Button(action: {
-                    
+                    self.viewingRequest = true
                 }) {
                     Text("Read")
                 }
             }
         }
-        .onTapGesture
-        {
-            if previewRequest == self.id
-            {
-                previewRequest = UUID()
-            }
-            else
-            {
-                previewRequest = self.id
-            }
-        }
-    }
-}
-
-struct DocumentListView_Previews: PreviewProvider {
-    static var previews: some View {
-        DocumentListView()
     }
 }

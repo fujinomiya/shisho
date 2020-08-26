@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var inViewer = false
     
     var body: some View {
-        VStack(alignment: .leading) {
-            DocumentListView()
+        if inViewer {
+            PDFView()
         }
-        .toolbar(content: { AddFileButtonView() })
-        .frame(width: 600, height: 600)
+        else {
+            VStack(alignment: .leading) {
+                DocumentListView(viewingRequest: self.$inViewer)
+            }
+            .toolbar(content: { AddFileButtonView() })
+        }
     }
 }
 

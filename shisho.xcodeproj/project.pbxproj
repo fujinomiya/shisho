@@ -19,6 +19,7 @@
 		30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190424EF1DD0004E39C2 /* Metadata.swift */; };
 		30D1190724F05D4D004E39C2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190624F05D4D004E39C2 /* Persistence.swift */; };
 		30D1190924F067D1004E39C2 /* DocumentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1190824F067D1004E39C2 /* DocumentListView.swift */; };
+		30D6E6B724F30FE400EE8AA2 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E6B624F30FE400EE8AA2 /* PDFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		30D1190424EF1DD0004E39C2 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		30D1190624F05D4D004E39C2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		30D1190824F067D1004E39C2 /* DocumentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListView.swift; sourceTree = "<group>"; };
+		30D6E6B624F30FE400EE8AA2 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PDFView.swift; path = ../../../../PDFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				30D118B524ED19F8004E39C2 /* AddFileButtonView.swift */,
 				30D1190824F067D1004E39C2 /* DocumentListView.swift */,
+				30D6E6B624F30FE400EE8AA2 /* PDFView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D6E6B724F30FE400EE8AA2 /* PDFView.swift in Sources */,
 				30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */,
 				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
