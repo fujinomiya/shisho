@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303762AC252D314800B5D31D /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303762AB252D314800B5D31D /* Sidebar.swift */; };
 		30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1188824ED097C004E39C2 /* shishoApp.swift */; };
 		30D1188D24ED097E004E39C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188C24ED097E004E39C2 /* Assets.xcassets */; };
 		30D1189024ED097E004E39C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		303762AB252D314800B5D31D /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		30D1188524ED097C004E39C2 /* shisho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shisho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D1188824ED097C004E39C2 /* shishoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoApp.swift; sourceTree = "<group>"; };
 		30D1188C24ED097E004E39C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303762AA252D2EAC00B5D31D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				303762AB252D314800B5D31D /* Sidebar.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		30D1187C24ED097C004E39C2 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		30D1188724ED097C004E39C2 /* shisho */ = {
 			isa = PBXGroup;
 			children = (
+				303762AA252D2EAC00B5D31D /* views */,
 				30D1190324EF1DB8004E39C2 /* models */,
 				30D118B724ED3654004E39C2 /* services */,
 				30D118B424ED1955004E39C2 /* components */,
@@ -310,6 +321,7 @@
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
 				30D118B924ED3784004E39C2 /* DocumentParsing.swift in Sources */,
 				30D118FC24ED7F82004E39C2 /* shisho.xcdatamodeld in Sources */,
+				303762AC252D314800B5D31D /* Sidebar.swift in Sources */,
 				30D1190924F067D1004E39C2 /* DocumentListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

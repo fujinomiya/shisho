@@ -15,7 +15,7 @@ struct shishoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                Text("container 1")
+                Sidebar()
                 Text("container 2")
             }
             .navigationViewStyle(DoubleColumnNavigationViewStyle())
