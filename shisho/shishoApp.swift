@@ -14,8 +14,12 @@ struct shishoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationView {
+                Text("container 1")
+                Text("container 2")
+            }
+            .navigationViewStyle(DoubleColumnNavigationViewStyle())
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
