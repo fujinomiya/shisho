@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1188824ED097C004E39C2 /* shishoApp.swift */; };
-		30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1188A24ED097C004E39C2 /* ContentView.swift */; };
 		30D1188D24ED097E004E39C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188C24ED097E004E39C2 /* Assets.xcassets */; };
 		30D1189024ED097E004E39C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */; };
 		30D1189C24ED097F004E39C2 /* shishoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1189B24ED097F004E39C2 /* shishoTests.swift */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		30D1188524ED097C004E39C2 /* shisho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shisho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D1188824ED097C004E39C2 /* shishoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shishoApp.swift; sourceTree = "<group>"; };
-		30D1188A24ED097C004E39C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30D1188C24ED097E004E39C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30D1188F24ED097E004E39C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30D1189124ED097E004E39C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				30D118B724ED3654004E39C2 /* services */,
 				30D118B424ED1955004E39C2 /* components */,
 				30D1188824ED097C004E39C2 /* shishoApp.swift */,
-				30D1188A24ED097C004E39C2 /* ContentView.swift */,
 				30D1188C24ED097E004E39C2 /* Assets.xcassets */,
 				30D1189124ED097E004E39C2 /* Info.plist */,
 				30D1189224ED097E004E39C2 /* shisho.entitlements */,
@@ -308,7 +305,6 @@
 			files = (
 				30D6E6B724F30FE400EE8AA2 /* PDFView.swift in Sources */,
 				30D1190524EF1DD0004E39C2 /* Metadata.swift in Sources */,
-				30D1188B24ED097C004E39C2 /* ContentView.swift in Sources */,
 				30D1188924ED097C004E39C2 /* shishoApp.swift in Sources */,
 				30D1190724F05D4D004E39C2 /* Persistence.swift in Sources */,
 				30D118B624ED19F8004E39C2 /* AddFileButtonView.swift in Sources */,
